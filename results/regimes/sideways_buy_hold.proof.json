@@ -1,0 +1,10 @@
+{
+  "chain_id": "31337",
+  "genesis_hash": "0x02f0e710b8cd892a4c07c37a9692f3fe855d4fd6e23163f3ab6e40aa3895df24",
+  "contract_address": "0x35887245652F53eA72c8D6a9FD595c9bE78Cb284",
+  "record_id": "6",
+  "transaction_hash": "0xa0cd919bd8951fabc247b493743f98945010d6813f0fe6db78ba8c2059ffdaa9",
+  "block_number": 15,
+  "file": "results/regimes/sideways_buy_hold.json",
+  "sha256": "0xa07405ea1c6513d61c0c18e45af2654b9a0c0eca8da27b3b5f25b512a1c46aac"
+}

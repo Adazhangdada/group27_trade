@@ -1,0 +1,10 @@
+{
+  "chain_id": "31337",
+  "genesis_hash": "0x02f0e710b8cd892a4c07c37a9692f3fe855d4fd6e23163f3ab6e40aa3895df24",
+  "contract_address": "0x35887245652F53eA72c8D6a9FD595c9bE78Cb284",
+  "record_id": "4",
+  "transaction_hash": "0xa6a8053fbaa61d28ff1e395ca132575be639204b8e26570b92e42eb3124965c0",
+  "block_number": 13,
+  "file": "results/regimes/bear_ma_cross.json",
+  "sha256": "0x5aafac07bf9854838bce17eac8a35a68889a6733d6121f94ea8be5f68e901f32"
+}

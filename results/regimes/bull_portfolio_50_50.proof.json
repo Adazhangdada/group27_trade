@@ -1,0 +1,10 @@
+{
+  "chain_id": "31337",
+  "genesis_hash": "0x02f0e710b8cd892a4c07c37a9692f3fe855d4fd6e23163f3ab6e40aa3895df24",
+  "contract_address": "0x35887245652F53eA72c8D6a9FD595c9bE78Cb284",
+  "record_id": "2",
+  "transaction_hash": "0xef01070af760c102e9fb3044ae24b2a19d613d7f1e603226b3360ce93f79baa5",
+  "block_number": 11,
+  "file": "results/regimes/bull_portfolio_50_50.json",
+  "sha256": "0x7f031ecd128c85ab713eae64438078851699583baffda0143882ce896197cfd1"
+}

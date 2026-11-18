@@ -1,0 +1,9 @@
+{
+  "contract_address": "0x35887245652F53eA72c8D6a9FD595c9bE78Cb284",
+  "chain_id": "31337",
+  "record_id": "0",
+  "transaction_hash": "0x1516dd7ac05b386886650621cbc4996719019edb9ad88402fb1415a39ede132b",
+  "block_number": 9,
+  "file": "results/regimes/bull_buy_hold.json",
+  "sha256": "0x4740aee6cd3dcea52331a1955d51ab41d994320001b80bb39c805666ecbdedaa"
+}

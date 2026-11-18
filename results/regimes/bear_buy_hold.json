@@ -1,0 +1,28 @@
+{
+  "data_sha256": "72fe31e258146c6fdca73aa560d76ef8646c31ecd0d1d63bcff91d50ed4fb8b9",
+  "execution": {
+    "fill": "next_open",
+    "final_liquidation": "last_close",
+    "signal": "previous_close",
+    "slippage": 0.0
+  },
+  "metrics": {
+    "final_value": 357.2139,
+    "max_drawdown_pct": -66.9312,
+    "return_pct": -64.2786,
+    "sharpe": -1.2912
+  },
+  "params": {
+    "fast": 5,
+    "fee_rate": 0.001,
+    "initial_capital": 1000.0,
+    "slow": 20
+  },
+  "period": {
+    "end": "2022-12-31",
+    "start": "2022-01-01"
+  },
+  "regime": "bear",
+  "strategy": "buy_hold",
+  "trade_count": 2
+}

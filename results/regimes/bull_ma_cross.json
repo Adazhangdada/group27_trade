@@ -1,0 +1,28 @@
+{
+  "data_sha256": "72fe31e258146c6fdca73aa560d76ef8646c31ecd0d1d63bcff91d50ed4fb8b9",
+  "execution": {
+    "fill": "next_open",
+    "final_liquidation": "last_close",
+    "signal": "previous_close",
+    "slippage": 0.0
+  },
+  "metrics": {
+    "final_value": 2873.7155,
+    "max_drawdown_pct": -27.7921,
+    "return_pct": 187.3715,
+    "sharpe": 3.0022
+  },
+  "params": {
+    "fast": 5,
+    "fee_rate": 0.001,
+    "initial_capital": 1000.0,
+    "slow": 20
+  },
+  "period": {
+    "end": "2021-04-30",
+    "start": "2020-10-01"
+  },
+  "regime": "bull",
+  "strategy": "ma_cross",
+  "trade_count": 12
+}

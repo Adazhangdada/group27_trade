@@ -1,0 +1,10 @@
+regime,strategy,return_pct,max_drawdown_pct,sharpe,final_value,trades
+bull,buy_hold,434.2965,-25.1748,4.1542,5342.9646,2
+bull,ma_cross,187.3715,-27.7921,3.0022,2873.7155,12
+bull,portfolio_50_50,310.834,-24.6432,3.7862,4108.3401,14
+bear,buy_hold,-64.2786,-66.9312,-1.2912,357.2139,2
+bear,ma_cross,-54.208,-57.6457,-1.916,457.9203,20
+bear,portfolio_50_50,-59.2433,-60.4303,-1.8259,407.5671,22
+sideways,buy_hold,13.4502,-20.0027,1.2314,1134.5017,2
+sideways,ma_cross,9.0397,-12.6369,1.1605,1090.3971,12
+sideways,portfolio_50_50,11.2449,-15.0258,1.2766,1112.4494,14

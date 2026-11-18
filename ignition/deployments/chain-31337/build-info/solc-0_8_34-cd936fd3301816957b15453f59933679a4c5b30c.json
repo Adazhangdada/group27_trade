@@ -1,0 +1,49 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_34-cd936fd3301816957b15453f59933679a4c5b30c",
+  "solcVersion": "0.8.34",
+  "solcLongVersion": "0.8.34+commit.80d5c536",
+  "compilerType": "solc",
+  "toolVersions": {
+    "hardhat": "3.22.0"
+  },
+  "userSourceNameMap": {
+    "contracts/BacktestRegistry.sol": "project/contracts/BacktestRegistry.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "osaka",
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode.linkReferences",
+            "evm.bytecode.object",
+            "evm.bytecode.opcodes",
+            "evm.bytecode.sourceMap",
+            "evm.deployedBytecode.immutableReferences",
+            "evm.deployedBytecode.linkReferences",
+            "evm.deployedBytecode.object",
+            "evm.deployedBytecode.opcodes",
+            "evm.deployedBytecode.sourceMap",
+            "evm.methodIdentifiers"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/BacktestRegistry.sol": {
+        "content": "\r\n // SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.34;\r\n\r\ncontract BacktestRegistry {\r\n\r\n    // 每一条存证记录\r\n    struct Record {\r\n        bytes32 dataHash;\r\n        address submitter;\r\n        uint256 timestamp;\r\n    }\r\n\r\n    // 根据记录编号查找存证\r\n    mapping(uint256 => Record) public records;\r\n\r\n    // 当前记录总数\r\n    uint256 public recordCount;\r\n\r\n    // 记录上链时发出事件\r\n    event BacktestAnchored(\r\n        uint256 indexed recordId,\r\n        bytes32 indexed dataHash,\r\n        address indexed submitter,\r\n        uint256 timestamp\r\n    );\r\n\r\n    // 提交一条新的回测记录\r\n    function anchorBacktest(\r\n        bytes32 dataHash\r\n    ) external returns (uint256) {\r\n\r\n        require(\r\n            dataHash != bytes32(0),\r\n            \"Empty hash\"\r\n        );\r\n\r\n        uint256 id = recordCount;\r\n        recordCount++;\r\n\r\n        records[id] = Record({\r\n            dataHash: dataHash,\r\n            submitter: msg.sender,\r\n            timestamp: block.timestamp\r\n        });\r\n\r\n        emit BacktestAnchored(\r\n            id,\r\n            dataHash,\r\n            msg.sender,\r\n            block.timestamp\r\n        );\r\n\r\n        return id;\r\n    }\r\n\r\n    // 查询某条记录的哈希\r\n    function getHash(\r\n        uint256 recordId\r\n    ) external view returns (bytes32) {\r\n\r\n        require(\r\n            recordId < recordCount,\r\n            \"Record not found\"\r\n        );\r\n\r\n        return records[recordId].dataHash;\r\n    }\r\n}\r\n"
+      }
+    }
+  }
+}
