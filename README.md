@@ -69,10 +69,11 @@ trade/
 ## 四、环境准备
 
 1. 安装 Node.js 24、Bun、Python 3；
-2. 安装 JS 依赖：
+2. 安装 JS 依赖（这步应该不用按照这个，我们课上已经安装好了）我觉得应该是启动hardhat：
 
    ```shell
-   bun install
+   # bun install（nonono）
+   bunx hardhat@v3 --init
    ```
 
 3. 安装 Python 依赖：
@@ -81,7 +82,7 @@ trade/
    pip install pandas numpy matplotlib
    ```
 
-4. 配置 chainlab 测试网账户私钥。`hardhat.config.ts` 通过 Hardhat Configuration Variable 读取 `PRIVATE_KEY`，不会出现明文私钥：
+4. 配置 chainlab 测试网账户私钥（这步我们课上也做好了）。`hardhat.config.ts` 通过 Hardhat Configuration Variable 读取 `PRIVATE_KEY`，不会出现明文私钥：
 
    ```shell
    npx hardhat keystore set PRIVATE_KEY
